@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Página UTNG GTID142 - Jorge Alberto</title>
+    <link rel="icon" href="../LogoUni.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <header class="cabecera">
+        <div class="imagenes">
+            <img src="../Universidad UTNG WEB GTID142/img/LogoUni.png" alt="Logo UTNG" class="logo-circular">
+            <img src="../Universidad UTNG WEB GTID142/img/mendi.jpg" alt="Logo Mendix" class="logo-circular">
+            <h1>Mendix</h1>
+        </div>
+    </header>
+
+        <section class="video-section">
+            <video autoplay loop muted class="gif-video">
+                <source src="../../Downloads/xxxxx.mp4" type="video/mp4">
+                Tu navegador no soporta video.
+            </video>
+        </section>
+
+        <nav>
+            <a href="#mendix" onclick="mostrarSeccion('mendix')">¿Qué es Mendix?</a>
+            <a href="#ventajas" onclick="mostrarSeccion('ventajas')">Ventajas</a>
+            <a href="#casosdeuso" onclick="mostrarSeccion('casosdeuso')">Casos de Uso</a>
+            <a href="#lowcode" onclick="mostrarSeccion('lowcode')">Low Code</a>
+        </nav>
+
+        <div class="columna-izquierda">
+            <section id="mendix" class="active">
+                <h2>Mendix</h2>
+                <p>Mendix es una plataforma de desarrollo de aplicaciones de bajo código que permite a los usuarios crear aplicaciones empresariales de manera rápida y eficiente. Fue fundada en 2005 y se destaca por su simplicidad y velocidad de desarrollo, reduciendo tiempo y costos mientras mejora la colaboración entre equipos y stakeholders.</p>
+            </section>
+
+            <section id="lowcode">
+                <h2>Low Code</h2>
+                <p>El Low Code permite crear aplicaciones usando interfaces visuales y configuraciones, en lugar de escribir código. Plataformas como Mendix aceleran el desarrollo y facilitan que personas sin experiencia técnica contribuyan, usando arrastrar y soltar componentes, configurar flujos y definir reglas de negocio.</p>
+            </section>
+
+            <section id="ventajas">
+                <h2>Ventajas de trabajar con Mendix</h2>
+                <ul>
+                    <li>Desarrollo rápido</li>
+                    <li>Facilidad de uso</li>
+                    <li>Colaboración mejorada</li>
+                    <li>Escalabilidad</li>
+                    <li>Integración sencilla</li>
+                </ul>
+            </section>
+
+            <section id="casosdeuso">
+                <h2>Casos de Uso</h2>
+                <p>Mendix se aplica en aplicaciones empresariales, móviles, portales web y en integración de sistemas. Facilita soluciones personalizadas y escalables para diversas industrias.</p>
+                <ol>
+                    <li>Siemens</li>
+                    <li>Enexis</li>
+                    <li>PwC</li>
+                    <li>Jobbird</li>
+                </ol>
+                <h3>Visita sus sitios web:</h3>
+                <ul>
+                    <li><a href="https://www.siemens.com/mx/es.html" target="_blank">Siemens</a></li>
+                    <li><a href="https://www.zurich.com.mx/" target="_blank">Zurich</a></li>
+                    <li><a href="https://www.capgemini.com/mx-es/" target="_blank">Capgemini</a></li>
+                    <li><a href="https://www.enexis.nl/" target="_blank">Enexis</a></li>
+                    <li><a href="https://www.careervalue.nl/" target="_blank">Careervalue</a></li>
+                </ul>
+            </section>
+        </div>
+
+
+    <footer>
+        <center><p>© 2025 Jorge Alberto GTID142 - A Y B COMPANY</p></center>
+    </footer>
+
+    <script>
+        function mostrarSeccion(id){
+            document.querySelectorAll("section").forEach(sec => sec.classList.remove("active"));
+            document.getElementById(id).classList.add("active");
+        }
+    </script>
+
+</body>
+</html>

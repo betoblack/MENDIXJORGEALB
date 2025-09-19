@@ -1,0 +1,107 @@
+/* ===== HEADER ===== */
+.cabecera {
+    /*text-align: center;*/
+    padding: 20px;
+    background: linear-gradient(to right, #0f0f0f, #1a1a1a);
+    color: #fff;
+    box-shadow: 0 0 20px #ff0080;
+}
+
+/* Logos circulares */
+.imagenes {
+    display: flex;
+    /*justify-content: center;*/
+    gap: 30px;
+    margin: 10px 0;
+}
+.logo-circular {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid #ff0080;
+    box-shadow: 0 0 20px #ff0080, 0 0 40px #ff0040;
+    transition: transform 0.3s;
+}
+.logo-circular:hover {
+    transform: scale(1.2) rotate(10deg);
+}
+
+/* ===== VIDEO ===== */
+.video-section {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+.gif-video {
+    width: 150%;
+    max-width: 170px;
+    border-radius: 30px;
+    border: 1px solid #ff0080;
+    box-shadow: 0 0 25px #ff0080, 0 0 50px #ff0040;
+}
+
+/* ===== NAV ===== */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+nav a {
+    text-decoration: none;
+    color: #00ab25;
+    font-weight: bold;
+    padding: 8px 15px;
+    border: 2px solid #ff0080;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+nav a:hover {
+    background: #ff0080;
+    color: #fff;
+}
+
+/* ===== CONTENIDO ===== */
+.columna-izquierda {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 20px;
+}
+section {
+    display: none;
+    margin-bottom: 30px;
+    background: #111;
+    padding: 20px;
+    border-radius: 20px;
+    color: #fff;
+    box-shadow: 0 0 20px #ff0080;
+}
+section.active {
+    display: block;
+}
+section h2, section h3 {
+    color: #ff0080;
+}
+section a {
+    color: #ff80c0;
+    text-decoration: underline;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    background: #111;
+    color: #fff;
+    box-shadow: 0 -5px 20px #ff0080;
+}
+
+/* ===== EFECTOS ===== */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #0f0f0f;
+    margin: 0;
+    padding: 0;
+}
